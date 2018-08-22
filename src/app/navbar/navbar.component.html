@@ -4,7 +4,9 @@
       <a class="navbar-brand" href="#"><img src="{{path}}" height="25px" width="100px"></a>
     </div>
     <ul class="nav navbar-nav navbar-left">
-      <li class="active"><a href="#">Home</a></li>
+      <li class="active">
+        <a [routerLink]="['/']">Home</a>
+      </li>
       <li><a href="#">Notes</a></li>
       <li><a href="#">Add Note</a></li>
     </ul>
