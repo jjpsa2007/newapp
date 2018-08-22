@@ -24,9 +24,11 @@ mongoose.connect(dbConfig.url, {useNewUrlParser: true})
 
 
 
-app.get('/', (req, res) => {
-    res.json({"Message" : "Welcome to the New app created"});
-});
+// app.get('/', (req, res) => {
+//     res.json({"Message" : "Welcome to the New app created"});
+// });
+
+require('./app/models/note.routes.js')(app);
 
 app.listen(port, () => {
     console.log("port started on " + port)
